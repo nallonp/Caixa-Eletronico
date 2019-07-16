@@ -4,10 +4,8 @@ using System.Text;
 
 namespace CaixaEletronico.Transacoes
 {
-    public interface ITransacao
+    interface ITransacao
     {
-        ENota Nota { get; }
-        uint Quantidade { get; }
-        ETipoTransacao TipoTransacao { get; }
+
     }
 }

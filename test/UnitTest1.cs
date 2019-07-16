@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace tests
+namespace CaixaEletronicoTest
 {
     public class UnitTest1
     {

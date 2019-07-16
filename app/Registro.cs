@@ -4,22 +4,18 @@ using System.Text;
 
 namespace CaixaEletronico
 {
-    public class Registro : IRegistro
+    public class RegistroDeTransacao
     {
         public DateTime Date { get; private set; }
 
         public ENota Nota { get; private set; }
 
         public uint Quantidade { get; private set; }
-
-        public ETipoTransacao TipoTransacao { get; private set; }
-
-        public Registro(ENota n, uint q, ETipoTransacao t)
+        public RegistroDeTransacao(ENota n, uint q)
         {
             Date = DateTime.UtcNow;
             Nota = n;
             Quantidade = q;
-            TipoTransacao = t;
         }
     }
 }

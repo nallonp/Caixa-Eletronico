@@ -1,15 +1,16 @@
-﻿using System;
+﻿using CaixaEletronico;
+using System;
 using System.Collections.Generic;
-using CaixaEletronico;
 
 namespace view
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             ConsoleKey key;
-            var cofre = new CofreV2();
+            var cofre = new Cofre();
             var opcoesDoMenu = new Dictionary<ConsoleKey, String>();
             opcoesDoMenu.Add(ConsoleKey.F1, "Depositar 10");
             opcoesDoMenu.Add(ConsoleKey.F2, "Depositar 20");
@@ -44,11 +45,8 @@ namespace view
                             Console.WriteLine("Digite o valor: ");
                             Console.ReadKey(true);
                             break;
-
                         case ConsoleKey.F5:
                             Console.WriteLine("Relatório de notas: ");
-                            var relatorios = cofre.Relatorios;
-                            Console.WriteLine("Saldo total: " + cofre.RetornarSaldo().ToString());
                             Console.ReadKey(true);
                             break;
                         default:
