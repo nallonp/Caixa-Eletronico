@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\app\CaixaEletronico.csproj" />
+    <ProjectReference Include="..\CaixaEletronico\CaixaEletronico.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CaixaEletronico.Transacoes
 {
-    interface ITransacao
+    public interface ITransacao
     {
 
     }
